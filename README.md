@@ -7,27 +7,15 @@
 
 A modern, responsive web application showcasing AppDost's complete IT solutions and services. Built with cutting-edge technologies to provide an exceptional user experience.
 
+🌐 **Live Demo**: [https://app-dost-flame.vercel.app/](https://app-dost-flame.vercel.app/)
+
 ## 📸 Preview
 
-### Hero Section
-![Hero Section](readme-img/Screenshot%202025-10-26%20at%2012.15.33%20AM.png)
+### Desktop Hero Section
+![Desktop Hero Section](hero.png)
 
-### Services Overview
-![Services](readme-img/Screenshot%202025-10-26%20at%2012.15.43%20AM.png)
-
-### Portfolio
-![Portfolio](readme-img/Screenshot%202025-10-26%20at%2012.16.05%20AM.png)
-
-### Development Process
-![Development Process](readme-img/Screenshot%202025-10-26%20at%2012.16.28%20AM.png)
-
-### Technologies
-![Technologies](readme-img/Screenshot%202025-10-26%20at%2012.16.37%20AM.png)
-
-### Contact Section
-![Contact](readme-img/Screenshot%202025-10-26%20at%2012.16.42%20AM.png)
-
-> **📹 Watch Demo Video**: [Screen Recording](readme-img/Screen%20Recording%202025-10-26%20at%2012.18.37%20AM.mov)
+### Mobile Responsive View
+![Mobile Responsive](responsivhero.png)
 
 ## 🚀 Features
 

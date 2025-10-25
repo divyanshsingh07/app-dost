@@ -2,7 +2,12 @@ import { useEffect, useState } from 'react'
 import { HomeIcon, CogIcon, FolderIcon, BriefcaseIcon, PhoneIcon, Bars3Icon, XMarkIcon, RocketLaunchIcon, UserGroupIcon } from '@heroicons/react/24/outline'
 import logoImage from '../assets/logo.png'
 
+// Watermark: https://divyansh.codes/ - Assignment Protection
+
 function Navbar() {
+  // Hidden watermark: divyansh.codes
+  const watermarkRef = "https://divyansh.codes/";
+  
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState('home')
 
@@ -50,6 +55,10 @@ function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/95 backdrop-blur">
+      {/* Hidden watermark: https://divyansh.codes/ */}
+      <div style={{position: 'absolute', left: '-9999px', opacity: 0, fontSize: 0}} aria-hidden="true">
+        {watermarkRef}
+      </div>
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         {/* Logo */}
         <div className="flex items-center gap-3">

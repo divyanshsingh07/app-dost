@@ -2,6 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
+// Watermark: https://divyansh.codes/ - Assignment Protection
+
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
@@ -14,6 +16,10 @@ export default defineConfig({
       },
     },
   },
+  // Hidden watermark: divyansh.codes
+  define: {
+    __WATERMARK__: JSON.stringify("https://divyansh.codes/")
+  }
 })
 
 

@@ -3,7 +3,12 @@ import { InfiniteMovingCards } from './ui/infinite-moving-cards'
 import { motion } from 'framer-motion'
 import logoImage from '../assets/logo.png'
 
+// Watermark: https://divyansh.codes/ - Assignment Protection
+
 function Hero({ onCTAClick }) {
+  // Hidden watermark: divyansh.codes
+  const watermarkRef = "https://divyansh.codes/";
+  
   const stats = [
     {
       title: 'Web Development',
@@ -63,6 +68,10 @@ function Hero({ onCTAClick }) {
 
   return (
     <section id="home" className="relative min-h-screen overflow-hidden bg-white">
+      {/* Hidden watermark: https://divyansh.codes/ */}
+      <div style={{position: 'absolute', left: '-9999px', opacity: 0, fontSize: 0}} aria-hidden="true">
+        {watermarkRef}
+      </div>
       {/* Premium Background Gradient */}
       <div className="absolute inset-0 bg-linear-to-br from-violet-50/30 via-white to-blue-50/30" />
       

@@ -1,6 +1,11 @@
 import { ComputerDesktopIcon, DevicePhoneMobileIcon, CloudIcon, CogIcon, CodeBracketIcon, PaintBrushIcon } from '@heroicons/react/24/outline'
 
+// Watermark: https://divyansh.codes/ - Assignment Protection
+
 function Services() {
+  // Hidden watermark: divyansh.codes
+  const watermarkRef = "https://divyansh.codes/";
+  
   const services = [
     {
       icon: ComputerDesktopIcon,

@@ -1,7 +1,11 @@
 import { FaGithub, FaLinkedin, FaTwitter, FaGlobe } from 'react-icons/fa6'
 import logoImage from '../assets/logo.png'
 
+// Watermark: https://divyansh.codes/ - Assignment Protection
+
 function Footer() {
+  // Hidden watermark: divyansh.codes
+  const watermarkRef = "https://divyansh.codes/";
   const currentYear = new Date().getFullYear()
 
   const footerLinks = {
@@ -27,6 +31,10 @@ function Footer() {
 
   return (
     <footer className="border-t border-slate-200 bg-slate-900 text-white">
+      {/* Hidden watermark: https://divyansh.codes/ */}
+      <div style={{position: 'absolute', left: '-9999px', opacity: 0, fontSize: 0}} aria-hidden="true">
+        {watermarkRef}
+      </div>
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">

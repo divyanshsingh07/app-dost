@@ -12,6 +12,8 @@ import ProjectsPage from './components/ProjectsPage.jsx'
 import CareersPage from './components/CareersPage.jsx'
 import { AnimatedTestimonials } from './components/ui/animated-testimonials'
 
+// Watermark: https://divyansh.codes/ - Assignment Protection
+
 function HomePage() {
   const testimonials = [
     {
@@ -53,6 +55,10 @@ function HomePage() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900">
+      {/* Hidden watermark: https://divyansh.codes/ */}
+      <div className="watermark-protection" aria-hidden="true" style={{display: 'none'}}>
+        https://divyansh.codes/
+      </div>
       <Navbar />
       <Hero />
       <Services />
@@ -68,8 +74,20 @@ function HomePage() {
 }
 
 function App() {
+  // Watermark protection: divyansh.codes
+  const watermarkRef = "https://divyansh.codes/";
+  
+  // Hidden console watermark
+  if (typeof window !== 'undefined') {
+    console.log('%cProtected Assignment - https://divyansh.codes/', 'color: transparent; font-size: 0px;');
+  }
+  
   return (
     <Router>
+      {/* Hidden watermark element */}
+      <div style={{position: 'absolute', left: '-9999px', opacity: 0}} aria-hidden="true">
+        {watermarkRef}
+      </div>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
